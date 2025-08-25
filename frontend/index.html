@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>NUB</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="loginForm">
+    <input id="sid" placeholder="Student ID" required/>
+    <input id="pass" type="password" placeholder="Password" required/>
+    <button>Login</button>
+  </form>
+
+  <section id="dashboard" style="display:none;">
+    <h2>Welcome <span id="name"></span></h2>
+    <button onclick="downloadSlip()">Download Permission Slip</button>
+    <table id="subjects"></table>
+  </section>
+
+<script src="app.js"></script>
+</body>
+</html>

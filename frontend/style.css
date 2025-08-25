@@ -1,0 +1,25 @@
+body { 
+    font-family: Arial; 
+    margin: 2rem; 
+}
+form input, button { 
+    display: block; 
+    margin: .5rem 0; 
+    padding: .5rem; 
+    width: 250px; 
+}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 1rem; 
+}
+th, td { 
+    border: 1px solid #ccc; 
+    padding: .5rem; 
+    text-align: left; 
+}
+@media(max-width:600px){ 
+    body{ 
+        margin:1rem; 
+    } 
+}
