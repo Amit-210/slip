@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS exam_slip;
+USE exam_slip;
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   student_id VARCHAR(20) UNIQUE NOT NULL,
@@ -39,8 +41,8 @@ CREATE TABLE student_subjects (
 );
 
 INSERT INTO users (student_id, password_hash, role) VALUES
-('S001', '$2b$10$abc123', 'student'),
-('S002', '$2b$10$abc123', 'student'),
+('S001', '$2b$10$ld39by1HqARoTrpDK91CBOf9PwgxkamEqguhe6E.U3p0DnH2qEwHS', 'student'),
+('S002', '$2b$10$ld39by1HqARoTrpDK91CBOf9PwgxkamEqguhe6E.U3p0DnH2qEwHS', 'student'),
 ('admin', '$2b$10$admin123', 'admin');
 
 INSERT INTO students (user_id, full_name, roll_no, department, semester) VALUES
